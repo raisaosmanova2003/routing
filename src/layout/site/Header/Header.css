@@ -1,0 +1,39 @@
+.navbar {
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.nav_list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none; 
+    height: 100%;
+    gap: 30px;
+    a {
+        font-size: 20px;
+        font-weight: 600;
+        text-decoration: none;
+        color: black ;
+    }
+}
+  
+.nav_buttons {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    height: 100%;
+    margin-left: 100px;
+    margin-top: 3px;
+    button {
+        background-color: green;
+        padding: 10px;
+        border-radius: 5px;
+        width: 200px;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        font-size: 20px;
+        font-weight: 600;
+        color: rgb(255, 255, 255);
+    }
+}
