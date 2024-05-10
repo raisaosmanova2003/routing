@@ -1,7 +1,7 @@
 import React from 'react'
-import Header from '../../layout/site/Header/Header'
+import Header from '../../layout/site/Header/Header.jsx'
 import { Outlet } from 'react-router'
-import Footer from '../../layout/site/Footer/Footer'
+import Footer from '../../layout/site/Footer/Footer.jsx'
 
 const SiteRoot = () => {
   return (

@@ -1,26 +1,21 @@
-import React, { useContext } from 'react'
-import MainContext from '../../../context/context'
+import React from 'react'
+import CardItem from '../CardItem/CardItem'
 
-const Card = () => {
-  const {data,setData}=useContext(MainContext)
+const Card = ({items}) => {
   return (
-    <div className="container " style={{marginTop:"5rem",display:"flex",gap:"2rem", marginBottom:"3rem"}} >
-    {
-      data.map((item,index)=>(
-<div className="card" style={{width: "18rem"}}>
-    <img className="card-img-top" src={item.image} alt="Card image cap"/>
-    <div className="card-body">
-      <h5 className="card-title">{item.name}</h5>
-      <p className="card-text">{item.price}</p>
-      <a href="#" className="btn btn-primary">Go somewhere</a>
-    </div>
-  </div>
-      ))
-    }
+    <div className='container d-flex  gap-5  mt-5 mb-5  '>
+        { items.map((item, index) =>(
+          <CardItem key={index} item={item}/>
+         )) 
+        }
+        </div>
+    
+      
+     
    
-  </div>
- 
   )
 }
 
-export default Card
+export default Card;
+
+
